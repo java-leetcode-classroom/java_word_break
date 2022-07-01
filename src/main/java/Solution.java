@@ -11,6 +11,9 @@ public class Solution {
               s.substring(start, start+word.length()).equals(word)) {
             dp[start]= dp[start+word.length()];
           }
+          if (dp[start]) {
+            break;
+          }
         }
      }
      return dp[0];

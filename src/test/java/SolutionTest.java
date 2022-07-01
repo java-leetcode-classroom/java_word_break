@@ -18,4 +18,8 @@ class SolutionTest {
   void wordBreakExample3() {
     assertFalse(sol.wordBreak("catsandog", List.of("cats","dog","sand","and","cat")));
   }
+  @Test
+  void wordBreakExample4() {
+    assertTrue(sol.wordBreak("abcd", List.of("a","abc","b","cd")));
+  }
 }
